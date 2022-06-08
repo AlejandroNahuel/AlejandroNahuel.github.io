@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Template</title>
+</head>
+<body class="bg-dark">
+    <!-- ===== Main Section Start ===== -->
+    <section class="d-flex">
+        <!-- ===== Aside Content Start ===== -->
+        <!-- === Offcanvas Button Start === -->
+        <button class="btn btn-outline-danger d-lg-none z-index-10 position-fixed mt-3 ms-3 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- === Offcanvas Button End === -->
+        <!-- === Offcanvas Start === -->
+        <aside class="offcanvas-lg offcanvas-start w-20 bg-black text-white-50 vh-100 position-fixed shadow justify-content-between" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+            <!-- == Offcanvas Header Start == -->
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-center mx-auto" id="offcanvasResponsiveLabel">Have a nice day!</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <!-- == Offcanvas Header End == -->
+            <!-- == Offcanvas Body Start == -->
+            <div class="offcanvas-body p-0 row row-cols-1 vh-100">
+                <!-- == Brand Start == -->
+                <p class="text-center mt-5">Nahuel</p>
+                <!-- == Brand End == -->
+                <!-- == Nav Items Start == -->
+                <ul class="list-unstyled ps-5 mt-5 px-4 h-50">
+                    <!-- = Home = -->
+                    <li class="fw-light text-start mb-2 aside-nav-item">
+                        <i class="fa-solid fa-house-chimney pe-1"></i>
+                        <a href="#" class="text-reset text-decoration-none text-muted text-capitalize">Home</a>
+                    </li>
+                    <!-- = Technical Skills = -->
+                    <li class="fw-light text-start mb-2 aside-nav-item">
+                        <i class="fa-solid fa-bars-progress pe-1"></i>
+                        <a href="#technicalSkills" class="text-reset text-decoration-none text-capitalize text-muted">Technical Skills</a>
+                    </li>
+                    <!-- = Projects = -->
+                    <li class="fw-light text-start aside-nav-item">
+                        <i class="fa-solid fa-lightbulb pe-2"></i>
+                        <a href="#projects" class="text-reset text-decoration-none text-capitalize text-muted">Projects</a>
+                    </li>
+                </ul>
+                <!-- == Nav Items End == -->
+                <!-- == Social Media Start == -->
+                <div class="text-center d-flex justify-content-around">
+                    <!-- LinkedIn -->
+                    <a class="text-reset align-self-end mx-2" href="https://www.linkedin.com/in/alejandro-nahuel/" target="_blank"><i class="fa-brands fa-linkedin aside-foot-icon"></i></a>
+                    <!-- Github -->
+                    <a class="text-reset align-self-end  mx-2" href="https://github.com/AlejandroNahuel" target="_blank"><i class="fa-brands fa-github-square aside-foot-icon"></i></a>
+                    <!-- Instagram -->
+                    <a class="text-reset align-self-end mx-2" href="https://www.instagram.com/alejandro.nahuel23/" target="_blank"><i class="fa-brands fa-instagram aside-foot-icon"></i></a>
+                </div>
+                <!-- == Social Media End == -->
+                <!-- == Select Languaje Start == -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <span class="align-self-center d-flex justify-content-center flex-wrap">
+                        Select Languaje:  
+                        <div class="text-center">
+                            <a class="mx-1 text-decoration-none text-reset languaje-link" href="@{''(lang=es)}"> ES</a> |
+                            <a class="me-1 text-decoration-none text-reset languaje-link" href="@{''(lang=en)}"> EN</a>
+                        </div>
+                    </span>
+                </div>
+                <!-- == Select Languaje End == -->
+            </div>
+            <!-- == Offcanvas Body End == -->
+        </aside>
+        <!-- === Offcanvas End === -->
+        <!-- ===== Aside Content End ===== -->
+
+        <!-- ===== Home Section Start ===== -->        
+        <main class="vh-100 ms-auto w-lg-80 text-white-50 d-flex flex-column flex-md-row justify-content-center align-items-center shadow">
+            <!-- ===== Home info Start ===== -->
+            <div class="mx-3 home-info mt-4">
+                <h1 class="h1 display-6 fw-normal text-md-start text-center">Hi! I'm Alejandro Nahuel</h1>
+                <p class="text-center pb-4 pb-md-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, ullam!</p>
+                <div class="d-flex justify-content-around">
+                    <a role="button" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4">Download CV</a>
+                    <a href="#" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4">Hire me!</a>
+                </div>
+            </div>
+            <!-- ===== Home info End ===== -->
+            <!-- ===== Home image Start ===== -->
+            <div class="home-img d-flex justify-content-center me-3 pb-3 order-first order-md-last">
+                <img src="./img/señora.jpg" alt="Alejandro Nahuel" class="w-75 my-4"/>
+            </div>
+            <!-- ===== Home image End ===== -->
+        </main>
+        <!-- ===== Home Section End ===== -->    
+    </section>
+    <!-- ===== Main Section End ===== -->
+    <!-- ===== Technical Skills Start===== -->
+    <section class="w-lg-80 ms-auto justify-content-around text-white-50 text-center my-4 d-flex flex-wrap">
+        <!-- Title --> 
+        <h2 class="col-12 text-capitalize mb-3" id="technicalSkills">
+            Technical Skills
+        </h2>
+        <!-- == Cards Start == -->
+        <!-- Card #1 Start -->
+        <article class="mx-3 row col-10 col-md-11 col-lg-5 rounded mb-3 shadow p-3 fw-light">
+            <!-- Icon -->
+            <div class="icon-container bg-danger rounded-circle d-flex justify-content-center d-inline-block mx-auto align-content-center">
+                <img src="./img/backend.png" alt="Backend Icon" class="my-auto icon-size backend-icon align-self-center"/>
+            </div>
+            <!-- Title -->
+            <h3 class="text-capitalize text-light h6">Backend</h3>
+            <!-- Backend List -->
+            <ul class="list-unstyled m-0">
+                <li><img src="./img/icons/java.svg" alt="Java-Icon" class="icon-size me-2"/>Java</li>
+                <li><img src="./img/icons/sql.svg" alt="SQL-Icon" class="icon-size me-2"/>SQL</li>
+            </ul>
+        </article>
+        <!-- Card #1 End -->
+
+        <!-- Card #2 Start -->
+        <article class="mx-3 row col-10 col-md-5 rounded mb-3 shadow p-3 fw-light">
+            <!-- Icon -->
+            <div class="icon-container bg-info rounded-circle d-flex justify-content-center d-inline-block mx-auto align-content-center">
+                <img src="./img/frontend.png" alt="Frontend Icon" class="my-auto icon-size align-self-center"/>
+            </div>
+            <!-- Title -->
+            <h3 class="text-capitalize text-light h6">Frontend</h3>
+            <!-- Frontend List -->
+            <ul class="list-unstyled m-0">
+                <li><img src="./img/icons/html-5.svg" alt="HTML-Icon" class="icon-size me-2"/>HTML</li>
+                <li><img src="./img/icons/css3-plain.svg" alt="CSS-Icon" class="icon-size me-2"/>CSS</li>
+                <li><img src="./img/icons/javascript.svg" alt="Javascript-Icon" class="icon-size me-2"/>Javascript</li>
+            </ul>
+        </article>
+        <!-- Card #2 End -->
+
+        <!-- Card #3 Start -->
+        <article class="mx-3 row col-10 col-md-5 rounded mb-3 shadow p-3 fw-light">
+            <!-- Icon -->
+            <div class="icon-container bg-warning rounded-circle d-flex justify-content-center d-inline-block mx-auto align-content-center">
+                <img src="./img/framework.png" alt="Backend Icon" class="my-auto icon-size align-self-center"/>
+            </div>
+            <!-- Title -->
+            <h3 class="text-capitalize text-light h6" text="#{technical-skills.frameworks}">Frameworks</h3>
+            <!-- Frameworks List -->
+            <ul class="list-unstyled m-0">
+                <li><img src="./img/icons/spring (1).svg" alt="Spring-Icon" class="icon-size me-2"/>Spring Boot</li>
+                <li><img src="./img/icons/bootstrap.svg" alt="Bootstrap-Icon" class="icon-size me-2"/>Bootstrap</li>
+            </ul>
+        </article>
+        <!-- Card #3 End -->
+
+        <!-- Card #4 Start -->
+        <article class="mx-3 row col-10 col-md-11 col-lg-5 rounded mb-3 shadow p-3 fw-light">
+            <!-- Icon -->
+            <div class="icon-container bg-secondary rounded-circle d-flex justify-content-center d-inline-block mx-auto align-content-center">
+                <img src="./img/methodologies.png" alt="Backend Icon" class="my-auto icon-size align-self-center"/>
+            </div>
+            <!-- Title -->
+            <h3 class="text-capitalize text-light h6">Methodologies & Tools</h3>
+            <!-- M&T List -->
+            <ul class="list-unstyled m-0">
+                <li><img src="./img/icons/scrum.svg" alt="Scrum-Icon" class="icon-size me-2"/>Scrum</li>
+                <li><img src="./img/icons/git.svg" alt="Git-Icon" class="icon-size me-2"/>Git</li>
+                <li><img src="./img/icons/github-code-source.svg" alt="Github-Icon" class="icon-size me-2"/>Github</li>
+                <li><img src="./img/icons/jira.svg" alt="Jira-Icon" class="icon-size me-2"/>Jira</li>
+            </ul>
+        </article>
+        <!-- Card #4 End -->
+        <!-- == Cards End == -->
+    </section>
+    <!-- ===== Technical Skills End===== -->
+
+    <!-- ===== Projects Start ===== -->
+    <section class="w-lg-80 ms-auto justify-content-around text-center text-white-50 pb-3 mb-3 d-flex flex-wrap shadow">
+        <!-- Title -->
+        <h2 class="col-12 text-capitalize mb-3" id="projects">
+            Projects
+        </h2>
+        <!-- == Cards Start == -->
+        <!-- Card #1 Start -->
+        <div class="row col-10 col-md-11 col-lg-5 rounded shadow my-4">
+            <!-- Title -->
+            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
+                <h4 class="text-capitalize h6 mb-1">Control-Fit Prices Calculator</h4>
+            </div>
+            <article class="p-3 fw-light">                
+                <!-- Description -->
+                <p class="col-12">Lorem ipsum dolor sit amet.</p>
+                <!-- Btn -->
+                <a href="#" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
+            </article>
+        </div>
+        <!-- Card #1 End -->
+
+        <!-- Card #2 Start -->
+        <div class="row col-10 col-md-5 rounded shadow my-4">
+            <!-- Title -->
+            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
+                <h4 class="text-capitalize h6 mb-1">Web profiles</h4>
+            </div>
+            <article class="p-3 fw-light">                
+                <!-- Description -->
+                <p class="col-12">Lorem ipsum dolor sit amet.</p>
+                <!-- Btn -->
+                <a href="#" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
+            </article>
+        </div>
+        <!-- Card #2 End -->
+
+        <!-- Card #3 Start -->
+        <div class="row col-10 col-md-5 rounded shadow my-4">
+            <!-- Title -->
+            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
+                <h4 class="text-capitalize h6 mb-1">Small Shop</h4>
+            </div>
+            <article class="p-3 fw-light">                
+                <!-- Description -->
+                <p class="col-12">Lorem ipsum dolor sit amet.</p>
+                <!-- Btn -->
+                <a href="#" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
+            </article>
+        </div>
+        <!-- Card #3 End -->
+
+        <!-- Card #4 Start -->
+        <div class="row col-10 col-md-11 col-lg-5 rounded shadow my-4">
+            <!-- Title -->
+            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
+                <h4 class="text-capitalize h6 mb-1">a game</h4>
+            </div>
+            <article class="p-3 fw-light">                
+                <!-- Description -->
+                <p class="col-12">Lorem ipsum dolor sit amet.</p>
+                <!-- Btn -->
+                <a href="#" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
+            </article>
+        </div>
+        <!-- Card #4 End -->
+        <!-- == Cards End == -->
+    </section>
+    <!-- ===== Projects End ===== -->
+
+    <!--JS Bootstrap-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- JS Main -->
+    <script src="@{/js/main.js}"></script>
+</body>
+</html>
