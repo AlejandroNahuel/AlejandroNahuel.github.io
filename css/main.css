@@ -114,3 +114,41 @@ span:hover a{
 .z-index-10{
     z-index: 10;
 }
+
+/*HOME HEADER ANIMATION*/
+@media screen and (min-width: 576px) {
+    
+    .home-header{
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: solid 2px #dc3545;
+        display: inline-block;
+        animation: typing-out 3s steps(40, end) .3s forwards,
+        blinking-cursor .8s infinite;
+        /* animation-duration: 3s;
+        animation-timing-function:  steps(40, end);
+        /* animation-iteration-count: 3; */
+        /* animation-delay: .4;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation: blinking-cursor .8s infinite; */
+    }
+
+    @keyframes typing-out {
+        from{
+            width: 0;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes blinking-cursor {
+        from{
+            border-right-color: transparent;
+        }
+        to{
+            border-right-color: #dc3545;
+        }
+    }    
+}
+
