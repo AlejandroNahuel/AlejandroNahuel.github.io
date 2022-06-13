@@ -9,6 +9,17 @@
     }
 }
 
+/*Font Style*/
+.font-style{
+    font-family: Clicker Script, cursive;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.aside-header{
+    font-size: 30px;    
+}
+
 .home-info{
     max-width: 60%;
     width: 60%;
@@ -122,8 +133,7 @@ span:hover a{
         white-space: nowrap;
         overflow: hidden;
         border-right: solid 2px #dc3545;
-        display: inline-block;
-        animation: typing-out 3s steps(40, end) .3s forwards,
+        animation: typing-out 3s steps(40, end),
         blinking-cursor .8s infinite;
         /* animation-duration: 3s;
         animation-timing-function:  steps(40, end);
