@@ -307,7 +307,7 @@ function drawAnO(element){
     //into a variable 
     let $img = document.createElement('img');
     //And we set its attributes src and a class
-    $img.setAttribute('src', './img/tictactoeIcons/OBrushedIcon.png');
+    $img.setAttribute('src', '/img/tictactoeIcons/OBrushedIcon.png');
     $img.setAttribute('class', 'img-width');
     $img.setAttribute('alt', 'O-Icon')
 
