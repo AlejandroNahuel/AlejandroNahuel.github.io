@@ -220,35 +220,6 @@ $board.addEventListener('click', (e)=>{
         }
     }
 });
-//And a touch event
-$board.addEventListener('touchend', (e)=>{
-    //If a field is taken we shouldn't let the players draw their icon in it
-    //And ask them to take another one
-    if(!isFieldTaken(e)){
-        //Depending on who's turn is, we draw an X or an O
-        if(isPlayerOneTurn){
-            drawAnX(e);
-            isPlayerOneTurn = false;
-        }
-        else{
-            drawAnO(e);
-            isPlayerOneTurn = true;
-        }
-        //After a player has drawn his icon we must verify rows, columns and diagonals
-        if(verifyRow() || verifyColumn() || diagonalValidation(mainDiagonal) || diagonalValidation(secondaryDiagonal)){
-            launchModal();
-            return;
-        }
-        else if(isBoardFull()){
-            $modalTitle.innerHTML = 'Tie!';
-            $modal.classList.add('show', 'd-block');
-            $modal.setAttribute('aria-modal', 'true');
-            $modal.setAttribute('role', 'dialog');
-            $modal.removeAttribute('aria-hidden');
-            document.body.classList.add('modal-open', 'overflow-hidden', 'pe-0');
-        }
-    }
-})
 
 const $modal = document.getElementById('staticBackdrop');
 let $modalTitle = document.getElementById('staticBackdropLabel');
