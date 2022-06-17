@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./css/ticTacToeCss.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body class="bg-dark">    
+        <div class="container mx-auto text-center">
+            <!-- Title -->
+            <h1 class="text-primary text-center text-uppercase">Tic Tac Toe</h1>
+            <div id="board">
+                <!-- Row #1 -->
+                <div class="d-flex justify-content-center">
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="1"></div>
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="2"></div>
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="3"></div>
+                </div>
+                <!-- Row #2 -->
+                <div class="d-flex justify-content-center">
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="4"></div>
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="5"></div>
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="6"></div>
+                </div>
+                <!-- Row #3 -->
+                <div class="d-flex justify-content-center">
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="7"></div>
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="8"></div>
+                    <div class="item flex-shrink-0 bg-white opacity-75 border border-dark square p-0 d-flex align-items-center" id="9"></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <a href="index.html" class="btn btn-outline-primary mt-3">Go back</a>
+                <a class="btn btn-outline-primary mt-3" href="https://github.com/AlejandroNahuel/TicTacToeJS" target="_blank">Go to repository</a>
+            </div>
+        </div>
+    
+
+    <!-- ===== Modal ===== -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h1 text-success mx-auto" id="staticBackdropLabel"></h5>
+                </div>
+                <div class="modal-body">
+                <img src="./img/ticTacToeIcons/monito.png" alt="Monito" class="d-block mx-auto img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="modalBtn">Play again!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JS Bootstrap-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- JS Main -->
+    <script src="./js/ticTacToeJS.js"></script>
+</body>
+</html>

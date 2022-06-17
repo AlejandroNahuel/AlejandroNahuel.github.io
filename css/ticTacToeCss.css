@@ -1,0 +1,34 @@
+.square{
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.img-width{
+    width: 100%;
+    height: 100%;
+}
+
+/*TOOLTIP*/
+#staticBackdrop {
+    position: absolute;
+    animation-name: modal-appear;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+img{
+    cursor: not-allowed;
+}
+
+@keyframes modal-appear {
+    from{
+        /*top: -100%;*/
+        opacity: 0;
+    }
+    to{
+        /*top: 100%*/
+        opacity: 1;
+    }
+}
