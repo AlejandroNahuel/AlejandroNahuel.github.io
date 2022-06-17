@@ -6,6 +6,7 @@ const errorMessage = "Field already taken, choose another one (:";
 const $errorMessage = document.createElement('p');
 $errorMessage.setAttribute('class','text-center text-danger h1');
 $board.after($errorMessage);
+$items = document.querySelectorAll('#item');
 
 //We add some constants
 playerOne = 'Player one';
@@ -307,7 +308,7 @@ function drawAnO(element){
     //into a variable 
     let $img = document.createElement('img');
     //And we set its attributes src and a class
-    $img.setAttribute('src', '/img/ticTacToeIcons/OBrushedIcon.png');
+    $img.setAttribute('src', './img/ticTacToeIcons/OBrushedIcon.png');
     $img.setAttribute('class', 'img-width');
     $img.setAttribute('alt', 'O-Icon')
 
