@@ -1,5 +1,5 @@
 .square{
-    --size: 200px;
+    --size: 100px;
     width: var(--size);
     height: var(--size);
 }
