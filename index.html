@@ -18,7 +18,7 @@
 </head>
 <body class="bg-dark">
     <!-- ===== Main Section Start ===== -->
-    <section class="d-flex">
+    <section class="d-flex" id="mainSection">
         <!-- ===== Aside Content Start ===== -->
         <!-- === Offcanvas Button Start === -->
         <button class="btn btn-lg btn-outline-danger d-lg-none z-index-10 position-fixed bg-dark mt-3 ms-3 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
@@ -26,11 +26,11 @@
         </button>
         <!-- === Offcanvas Button End === -->
         <!-- === Offcanvas Start === -->
-        <aside class="offcanvas-lg offcanvas-start w-20 bg-black bg-opacity-75 text-white-50 position-fixed shadow justify-content-between" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+        <aside class="offcanvas-lg offcanvas-start w-20 w-mobile-m-30 bg-black bg-opacity-75 text-white-50 position-fixed shadow justify-content-between" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
             <!-- == Offcanvas Header Start == -->
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title text-center mx-auto font-style aside-header text-danger" id="offcanvasResponsiveLabel">Alejandro Nahuel</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close" id="offcanvasCloseBtn"></button>
             </div>
             <!-- == Offcanvas Header End == -->
             <!-- == Offcanvas Body Start == -->
@@ -40,21 +40,40 @@
                 <!-- == Brand End == -->
                 <!-- == Nav Items Start == -->
                 <ul class="list-unstyled ps-5 mt-5 px-4 h-50">
-                    <!-- = Home = -->
-                    <li class="fw-light text-start mb-2 aside-nav-item">
+                    <!-- = Home Start = -->
+                    <!-- Show this from sm screens to lg screens -->
+                    <li class="fw-light text-start mb-2 aside-nav-item d-lg-none">
+                        <i class="fa-solid fa-house-chimney pe-1"></i>
+                        <a href="#" class="text-reset text-decoration-none text-muted text-capitalize" id="canvasHome" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive">Home</a>
+                    </li>
+                    <!-- Show this from lg screens onward -->
+                    <li class="fw-light text-start mb-2 aside-nav-item d-none d-lg-block">
                         <i class="fa-solid fa-house-chimney pe-1"></i>
                         <a href="#" class="text-reset text-decoration-none text-muted text-capitalize">Home</a>
                     </li>
-                    <!-- = Technical Skills = -->
-                    <li class="fw-light text-start mb-2 aside-nav-item">
+                    <!-- = Home End = -->
+                    <!-- = Projects Start = -->
+                    <li class="fw-light text-start mb-2 aside-nav-item d-lg-none">
+                        <i class="fa-solid fa-lightbulb pe-2"></i>
+                        <a href="#projects"class="text-reset text-decoration-none text-capitalize text-muted" id="canvasProjects" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive">Projects</a>
+                    </li>
+                    <li class="fw-light text-start mb-2 aside-nav-item d-none d-lg-block">
+                        <i class="fa-solid fa-lightbulb pe-2"></i>
+                        <a href="#projects"class="text-reset text-decoration-none text-capitalize text-muted">Projects</a>
+                    </li>
+                    <!-- = Projects End = -->
+                    <!-- = Technical Skills Start = -->
+                    <!-- Show this from sm screens to lg screens -->
+                    <li class="fw-light text-start aside-nav-item d-lg-none">
+                        <i class="fa-solid fa-bars-progress pe-1"></i>
+                        <a href="#technicalSkills" class="text-reset text-decoration-none text-capitalize text-muted" id="canvasTechnicalSkills" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive">Technical Skills</a>
+                    </li>
+                    <!-- Show this from lg screens onward -->
+                    <li class="fw-light text-start aside-nav-item d-none d-lg-block">
                         <i class="fa-solid fa-bars-progress pe-1"></i>
                         <a href="#technicalSkills" class="text-reset text-decoration-none text-capitalize text-muted">Technical Skills</a>
                     </li>
-                    <!-- = Projects = -->
-                    <li class="fw-light text-start aside-nav-item">
-                        <i class="fa-solid fa-lightbulb pe-2"></i>
-                        <a href="#projects" class="text-reset text-decoration-none text-capitalize text-muted">Projects</a>
-                    </li>
+                    <!-- = Technical Skills End = -->
                 </ul>
                 <!-- == Nav Items End == -->
                 <!-- == Social Media Start == -->
@@ -63,8 +82,6 @@
                     <a class="text-reset align-self-end mx-2" href="https://www.linkedin.com/in/alejandro-nahuel/" target="_blank"><i class="fa-brands fa-linkedin aside-foot-icon"></i></a>
                     <!-- Github -->
                     <a class="text-reset align-self-end  mx-2" href="https://github.com/AlejandroNahuel" target="_blank"><i class="fa-brands fa-github-square aside-foot-icon"></i></a>
-                    <!-- Instagram -->
-                    <a class="text-reset align-self-end mx-2" href="https://www.instagram.com/alejandro.nahuel23/" target="_blank"><i class="fa-brands fa-instagram aside-foot-icon"></i></a>
                 </div>
                 <!-- == Social Media End == -->
                 <!-- == Select Languaje Start == -->
@@ -85,19 +102,19 @@
         <!-- ===== Aside Content End ===== -->
 
         <!-- ===== Home Section Start ===== -->        
-        <main class="ms-auto w-lg-80 text-white-50 d-flex flex-column flex-md-row justify-content-center align-items-center shadow pb-3">
+        <main class="ms-auto w-lg-80 text-white-50 d-flex flex-column flex-md-row justify-content-center align-items-center shadow pb-3" id="homeSection">
             <!-- ===== Home info Start ===== -->
             <div class="mx-3 home-info mt-4 d-flex d-md-block justify-content-center flex-wrap">
-                <h1 class="fw-normal text-center text-md-start">Hi! I'm <span class="font-style text-danger">Alejandro Nahuel</span></h1>
+                <h1 class="fw-normal text-center text-md-start text-xxl-center">Hi! I'm <span class="font-style text-danger">Alejandro Nahuel</span></h1>
                 
-                    <h2 class="fw-normal ps-md-3 mb-2 d-none d-sm-block">And I'm <div class="d-inline-block align-bottom">
+                    <h2 class="fw-normal ps-md-3 mb-2 d-none d-sm-block text-xxl-center">And I'm <div class="d-inline-block align-bottom">
                         <div class="home-header pe-1 text-danger fw-light">a fullstack developer</div>
                     </div></h2>
                 
-                <p class="text-center pb-4 pb-md-0 mt-2">I'm a fullstack developer looking for his first opportunity in the IT world</p>
+                <p class="text-center text-lg-start text-xxl-center ps-lg-3 pb-4 pb-md-0 mt-2">I'm a fullstack developer looking for his first opportunity in the IT world</p>
                 <div class="d-flex flex-wrap justify-content-around">
-                    <a role="button" href="./othersources/CV-Alejandro Rodriguez.pdf" target="_blank" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4 mb-3 me-2 ms-2">Download CV</a>
-                    <a href="#" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4 mb-3 ms-2 me-2">Hire me!</a>
+                    <!-- <a role="button" href="./othersources/CV-Alejandro Rodriguez.pdf" target="_blank" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4 mb-3 me-2 ms-2">Download CV</a> -->
+                    <a href="#" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4 mb-3 ms-2 me-2 mt-1 col-xxl-5">Hire me!</a>
                 </div>
             </div>
             <!-- ===== Home info End ===== -->
@@ -110,8 +127,49 @@
         <!-- ===== Home Section End ===== -->    
     </section>
     <!-- ===== Main Section End ===== -->
+
+    <!-- ===== Projects Start ===== -->
+    <section class="w-lg-80 ms-auto justify-content-around text-center text-white-50 pb-3 mb-3 d-flex flex-wrap shadow" id="projectsSection">
+        <!-- Title -->
+        <h2 class="col-12 text-capitalize mb-3" id="projects">
+            Projects
+        </h2>
+        <!-- == Cards Start == -->
+        <!-- Card #1 Start -->
+        <div class="row col-10 col-lg-5 rounded shadow my-4">
+            <!-- Title -->
+            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
+                <h4 class="text-capitalize h6 mb-1">Control-Fit Prices Calculator</h4>
+            </div>
+            <article class="p-3 fw-light bg-dark rounded-bottom">                
+                <!-- Description -->
+                <p class="col-12">Lorem ipsum dolor sit amet.</p>
+                <!-- Btn -->
+                <a href="#" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
+            </article>
+        </div>
+        <!-- Card #1 End -->
+
+        <!-- Card #2 Start -->
+        <div class="row col-10 col-lg-5 rounded shadow my-4">
+            <!-- Title -->
+            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
+                <h4 class="text-capitalize h6 mb-1">Tic-tac-toe</h4>
+            </div>
+            <article class="p-3 fw-light">                
+                <!-- Description -->
+                <p class="col-12">Little game made using only HTML CSS and JS</p>
+                <!-- Btn -->
+                <a href="tic-tac-toe-JS.html" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
+            </article>
+        </div>
+        <!-- Card #2 End -->
+        <!-- == Cards End == -->
+    </section>
+    <!-- ===== Projects End ===== -->
+
     <!-- ===== Technical Skills Start===== -->
-    <section class="w-lg-80 ms-auto justify-content-around text-white-50 text-center my-4 d-flex flex-wrap">
+    <section class="w-lg-80 ms-auto justify-content-around text-white-50 text-center my-4 d-flex flex-wrap" id="technicalSkillsSection">
         <!-- Title --> 
         <h2 class="col-12 text-capitalize mb-3" id="technicalSkills">
             Technical Skills
@@ -184,52 +242,15 @@
         </article>
         <!-- Card #4 End -->
         <!-- == Cards End == -->
+        <!-- == Download CV Button Start == -->
+        <a role="button" href="./othersources/CV-Alejandro Rodriguez.pdf" target="_blank" class="text-center btn rounded-pill btn-outline-danger fw-light fs-6 px-4 me-2 ms-2 mt-2 col-mobile-l-6 col-10">Download CV</a>
+        <!-- == Download CV Button End ==-->
     </section>
     <!-- ===== Technical Skills End===== -->
-
-    <!-- ===== Projects Start ===== -->
-    <section class="w-lg-80 ms-auto justify-content-around text-center text-white-50 pb-3 mb-3 d-flex flex-wrap shadow">
-        <!-- Title -->
-        <h2 class="col-12 text-capitalize mb-3" id="projects">
-            Projects
-        </h2>
-        <!-- == Cards Start == -->
-        <!-- Card #1 Start -->
-        <div class="row col-10 col-lg-5 rounded shadow my-4">
-            <!-- Title -->
-            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
-                <h4 class="text-capitalize h6 mb-1">Control-Fit Prices Calculator</h4>
-            </div>
-            <article class="p-3 fw-light">                
-                <!-- Description -->
-                <p class="col-12">Lorem ipsum dolor sit amet.</p>
-                <!-- Btn -->
-                <a href="#" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
-            </article>
-        </div>
-        <!-- Card #1 End -->
-
-        <!-- Card #2 Start -->
-        <div class="row col-10 col-lg-5 rounded shadow my-4">
-            <!-- Title -->
-            <div class="w-100 rounded-top bg-danger text-light p-1 m-0">
-                <h4 class="text-capitalize h6 mb-1">Tic-tac-toe</h4>
-            </div>
-            <article class="p-3 fw-light">                
-                <!-- Description -->
-                <p class="col-12">Little game made using only HTML CSS and JS</p>
-                <!-- Btn -->
-                <a href="tic-tac-toe-JS.html" class="btn btn-outline-danger w-25 align-self-end py-1">Go</a>
-            </article>
-        </div>
-        <!-- Card #2 End -->
-        <!-- == Cards End == -->
-    </section>
-    <!-- ===== Projects End ===== -->
 
     <!--JS Bootstrap-->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- JS Main -->
-    <script src="@{/js/main.js}"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

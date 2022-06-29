@@ -9,11 +9,40 @@
     }
 }
 
+@media screen and (min-width: 425px){
+    .col-mobile-l-6{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    .w-mobile-m-30{
+        max-width: 60%;
+        width: 60%;
+    }
+    
+    #offcanvasCloseBtn{
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 374.98px){
+    #offcanvasResponsiveLabel{
+        display: none;        
+    }
+}
+
 /*Font Style*/
 .font-style{
     font-family: Clicker Script, cursive;
     font-size: 50px;
     font-weight: 900;
+}
+
+.offcanvas-header-text{
+    font-size: 20px;
+    font-family: Clicker Script, cursive;
+    font-weight: 700;
 }
 
 .aside-header{
