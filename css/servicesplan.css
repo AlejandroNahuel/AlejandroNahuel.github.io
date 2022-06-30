@@ -1,0 +1,13 @@
+.img-width{
+    --width: 400px;
+    width: var(--width);
+    height: calc(var(--width)/2.04);
+}
+
+.back-link{
+    transition-delay: .1s;
+    transition-duration: .3s;
+}
+.back-link:hover {
+    color: #dc3545;
+}

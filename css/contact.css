@@ -1,0 +1,7 @@
+.back-link{
+    transition-delay: .1s;
+    transition-duration: .3s;
+}
+.back-link:hover {
+    color: #dc3545;
+}

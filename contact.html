@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Alejandro Nahuel - Contact</title>
+</head>
+<body class="bg-dark vh-100 d-flex">
+    <div class="container align-self-center text-white-50">
+        <div class="back-link">
+            <i class="fa fa-angle-double-left"></i><a class="ms-1 text-reset text-decoration-none" href="index.html"></i>Go back</a>
+        </div>
+        <h1 class="text-center text-uppercase text-danger">Contact section</h1>
+        <p class="text-center ">Send me an email so we can get in touch</p>
+        <div class="col-6 mx-auto">
+            <div class="card bg-dark shadow">
+                <div class="card-header bg-danger text-white text-center border border-danger rounded-0 rounded-top ">Contact Form</div>
+                <div class="card-body border border-danger rounded-bottom">
+                    <form action="https://formsubmit.co/0d75aa45e48d2f8391bef1b99ffef29a" method="POST" class="mb-3">
+                        <label for="name" class="form-label ">Name</label>
+                        <input type="text" name="name" id="name" required class="form-control mb-3">
+                        <label for="email" class="form-label ">Email</label>
+                        <input type="email" name="email" id="email" required class="form-control mb-3">
+                        <label for="subject" class="form-label ">Subject</label>
+                        <input type="text" name="subject" id="subject" required class="form-control mb-3">
+                        <label for="comments" class="form-label ">Comments</label>
+                        <textarea name="comments" id="comments" cols="30" rows="5" class="form-control mb-3" style="resize: none;"></textarea>
+                        <button type="submit" class="btn btn-outline-danger d-block mx-auto col-4" id="btn">Send!</button>
+                        <!-- Avoids the reCaptcha page -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Stays in this page after sending the email -->
+                        <input type="hidden" name="_next" value="http://localhost:5500/contact.html">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
